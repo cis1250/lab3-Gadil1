@@ -3,18 +3,20 @@
 # Fibonacci Sequence Exercise
 # TODO: (Read detailed instructions in the Readme file)
 # Prompt the user for the number of terms.
+
+# Ask for input
 n = input("Enter the number of terms: ")
-# Validate that the input is a positive integer.
+
+# Validate until it's a positive integer
 while not n.isdigit() or int(n) <= 0:
-  print ("Please enter a positive integer.")
-  n = input("Enter the number of terms: ")
+    print("Please enter a positive integer.")
+    n = input("Enter the number of terms: ")
 
-  n = int(n)
-  a = 0
-  b = 1
-# Use a for loop to print the Fibonacci sequence up to that many terms.
+# Convert to int AFTER validation
+n = int(n)
 
-
-for x in range(n):
-print(a, end=" ")
-a, b = b, a + b
+# Fibonacci sequence
+a, b = 0, 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
