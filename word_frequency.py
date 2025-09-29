@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+!/usr/bin/env python3
 
 # Word frequency exercise
 # TODO: (Read detailed instructions in the Readme file)
@@ -56,11 +56,12 @@ for word in words_in_sentence:
     if word in words:
      index = words.index(word)
      frequencies[index] += 1
-else:
-    #Add the word to the listand set its frequency to 1
-    words.append(word)
-    frequencies.append(1)
+    else:
+        #Add the word to the listand set its frequency to 1
+        words.append(word)
+        frequencies.append(1)
 #Print word frequencies
 for i in range(len(words)):
-    print(words[i] + ":" , frequencies[i]
+    print(words[i] + ":" , frequencies[i])
+
 
