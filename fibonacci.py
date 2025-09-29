@@ -6,7 +6,7 @@
 n = input("Enter the number of terms: ")
 # Validate that the input is a positive integer.
 while not n.isdigit() or int(n) <= 0:
-  print ("Please enter a positive integer."
+  print ("Please enter a positive integer.")
   n = input("Enter the number of terms: ")
 
   n = int(n)
