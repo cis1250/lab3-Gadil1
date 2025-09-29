@@ -41,17 +41,21 @@ while (is_sentence(user_sentence) == False):
 user_sentence = user_sentence.lower()
 
 #Remove Punctuation at the start and end
-user_senetence = user_sentence.strip(string.punctuation)
+user_sentence = user_sentence.strip(string.punctuation)
 
 #Split the sentence into words.
 words_in_sentence = user_sentence.split()
 
+#Initialize lists
+words = []
+frequencies = []
+
 #Create lists to store words and their frequencies
 for word in words_in_sentence:
     word = word.strip(string.punctuation)
-if word in words:
-    index = words.index(word)
-    frequencies[index] += 1
+    if word in words:
+     index = words.index(word)
+     frequencies[index] += 1
 else:
     #Add the word to the listand set its frequency to 1
     words.append(word)
