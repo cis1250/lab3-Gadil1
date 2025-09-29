@@ -15,6 +15,6 @@ while not n.isdigit() or int(n) <= 0:
 # Use a for loop to print the Fibonacci sequence up to that many terms.
 
 
-for x in range (n):
+for x in range(n):
 print(a, end=" ")
 a, b = b, a + b
